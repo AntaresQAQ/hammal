@@ -1,9 +1,9 @@
-import { handleRequest } from './handler'
+import { handleRequest } from "./handler";
 
 declare global {
-  const HAMMAL_CACHE: KVNamespace
+  const HAMMAL_CACHE: KVNamespace;
 }
 
-addEventListener('fetch', (event) => {
-  event.respondWith(handleRequest(event.request))
-})
+addEventListener("fetch", (event) => {
+  event.respondWith(handleRequest(event.request));
+});
